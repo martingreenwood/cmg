@@ -1,0 +1,88 @@
+{
+    "key": "group_5a2a99d5c211d",
+    "title": "Section Two",
+    "fields": [
+        {
+            "key": "field_5a2a99df8f6d2",
+            "label": "Section Two Image",
+            "name": "section_two_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "large",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5a53442c0ab7c",
+            "label": "Section Two Messages",
+            "name": "section_two_messages",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5a2a99f98f6d3",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Message",
+            "sub_fields": [
+                {
+                    "key": "field_5a2a99f98f6d3",
+                    "label": "Message",
+                    "name": "section_two_text",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "\/\/ homepage",
+    "modified": 1515491657
+}

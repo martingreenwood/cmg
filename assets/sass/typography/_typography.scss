@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family:"UniformCondensed-Medium";
+    src:url("assets/fonts/Miller Type Foundry - UniformCondensed-Medium.woff2") format("woff2"),url("assets/fonts/Miller Type Foundry - UniformCondensed-Medium.woff") format("woff"),url("assets/fonts/Miller Type Foundry - UniformCondensed-Medium.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Uniform-Medium";
+    src:url("assets/fonts/Miller Type Foundry - Uniform-Medium.woff2") format("woff2"),url("assets/fonts/Miller Type Foundry - Uniform-Medium.woff") format("woff"),url("assets/fonts/Miller Type Foundry - Uniform-Medium.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Uniform";
+    src:url("assets/fonts/Miller Type Foundry - Uniform.woff2") format("woff2"),url("assets/fonts/Miller Type Foundry - Uniform.woff") format("woff"),url("assets/fonts/Miller Type Foundry - Uniform.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Uniform-Bold";
+    src:url("assets/fonts/Miller Type Foundry - Uniform-Bold.woff2") format("woff2"),url("assets/fonts/Miller Type Foundry - Uniform-Bold.woff") format("woff"),url("assets/fonts/Miller Type Foundry - Uniform-Bold.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"Uniform-Black";
+    src:url("assets/fonts/Miller Type Foundry - Uniform-Black.woff2") format("woff2"),url("assets/fonts/Miller Type Foundry - Uniform-Black.woff") format("woff"),url("assets/fonts/Miller Type Foundry - Uniform-Black.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+
+p {
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: "Uniform-Black";
+}

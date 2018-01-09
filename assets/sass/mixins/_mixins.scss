@@ -1,0 +1,39 @@
+@mixin bottomslope() {
+	content: "";
+	margin: 0 0;
+	transform-origin: left center;
+	position: absolute;
+	width: 105vw;
+	height: 150px;
+	z-index: 0;
+	left: 0;
+	background-color: white;
+	bottom: 0;
+	transform: rotate(-6deg) skew(-6deg, 0deg);
+	bottom: -150px;	
+
+	@media (#{$bp-larger-than-desktop}) {
+		height: 250px; 
+		bottom: -250px;	
+	}
+}
+
+@mixin topslope() {
+	content: "";
+	margin: 0 0;
+	transform-origin: left center;
+	position: absolute;
+	width: 105vw;
+	height: 150px;
+	z-index: 0;
+	left: 0;
+	background-color: white;
+	bottom: 0;
+	transform: rotate(6deg) skew(6deg, 0deg);
+	top: -150px;	
+
+	@media (#{$bp-larger-than-desktop}) {
+		height: 250px; 
+		top: -250px;	
+	}
+}
