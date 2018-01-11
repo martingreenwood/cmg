@@ -192,7 +192,7 @@ get_header(); ?>
 				</div>
 
 				<div class="ten columns copy">
-					<h3>Get in touch!</h3>
+					<h3>Get in touch</h3>
 					<div class="text">
 						<h4>We'd love to hear from you.</h4>
 						<p>Shoot us an email at <a href="mailto:licensing@catersmediagroup.com">licensing@catersmediagroup.com</a><br> 

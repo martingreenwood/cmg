@@ -249,7 +249,7 @@ get_header(); ?>
 		
 	</section>
 
-	<section id="casestudy">
+	<!-- <section id="casestudy">
 
 		<div class="table">
 			<div class="cell middle">
@@ -278,7 +278,7 @@ get_header(); ?>
 			</div>
 		</div>
 				
-	</section>
+	</section> -->
 
 	<section id="contact">
 
@@ -291,10 +291,10 @@ get_header(); ?>
 				</div>
 
 				<div class="ten columns copy">
-					<h3>Get in touch!</h3>
+					<h3>Get in touch</h3>
 					<div class="text">
 						<h4>We'd love to hear from you.</h4>
-						<p>Shoot us an email at <a href="mailto:licensing@catersmediagroup.com">licensing@catersmediagroup.com</a><br> 
+						<p>Shoot us an email at <a href="mailto:hello@catersmediagroup.com">hello@catersmediagroup.com</a><br> 
 						to find out how we can help with your campaign.</p>
 					</div>
 					<img src="<?php echo get_template_directory_uri() . '/assets/img/env.png' ?>" alt="">
