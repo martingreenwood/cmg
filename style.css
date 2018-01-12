@@ -432,7 +432,11 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 
 @media (max-width: 1160px) { section .blank { display: none; } }
 
-#intro { height: 100vh; min-height: 900px; background-color: transparent; }
+#intro { height: 100vh; background-color: transparent; }
+
+@media (min-width: 550px) { #intro { min-height: 900px; } }
+
+@media (max-width: 750px) { #intro { background-position: 70% !important; } }
 
 #intro h1, #intro h2 { color: white; line-height: 1; margin: 0; }
 
@@ -507,6 +511,8 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 #social .caveat { margin-top: 40px; display: inline-block; }
 
 #social .caveat h4 { color: #5f007b; font-size: 34px; font-family: "Uniform-Medium"; }
+
+@media (max-width: 750px) { .home #social { background-position: 0 50% !important; } }
 
 .about #social, .licensing #social { background-color: #27b6b3; height: auto; padding: 200px 0; min-height: auto; }
 
@@ -638,6 +644,8 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 #news .brands { margin-top: 60px; }
 
 #news .brands img { width: 16.666%; height: auto; float: left; filter: grayscale(1); }
+
+@media (max-width: 750px) { #news .brands img { width: 50%; } }
 
 #subfooter { padding: 50px 0; background-color: #591985; color: white; }
 

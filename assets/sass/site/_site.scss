@@ -154,8 +154,15 @@ section {
 
 #intro {
 	height: 100vh;
-	min-height: 900px;
 	background-color: transparent;
+
+	@media (#{$bp-larger-than-phablet}) {
+		min-height: 900px;
+	}
+
+	@media (#{$bp-smaller-than-tablet}) {
+    	background-position: 70% !important;
+	}
 
 	.hero {
 		// @media (#{$bp-smaller-than-desktop}) {
@@ -351,6 +358,12 @@ section {
 			font-size: 34px;
 			font-family: "Uniform-Medium";
 		}
+	}
+}
+
+.home #social {
+	@media (#{$bp-smaller-than-tablet}) {
+    	background-position: 0 50% !important;
 	}
 }
 
@@ -685,6 +698,10 @@ section {
 			height: auto;
 			float: left;
 			filter: grayscale(1);
+
+			@media (#{$bp-smaller-than-tablet}) {
+				width: 50%;
+			}
 		}
 	}
 }
