@@ -102,7 +102,7 @@ td, th { padding: 0; }
 /* Skeleton V2.0.4 Copyright 2014, Dave Gamache www.getskeleton.com Free to use under the MIT license. http://www.opensource.org/licenses/mit-license.php 12/9/2014 Sass Version by Seth Coelen https://github.com/whatsnewsaes */
 html { font-size: 62.5%; }
 
-body { font-size: 1.5em; line-height: 1.6; font-weight: 400; font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #210e26; }
+body { font-size: 1.7em; line-height: 1.6; font-weight: 600; font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #210e26; }
 
 a { color: #5f007b; }
 
@@ -118,7 +118,7 @@ hr { margin-top: 3rem; margin-bottom: 3.5rem; border-width: 0; border-top: 1px s
 
 .u-pull-left { float: left; }
 
-h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 2rem; font-weight: 300; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 2rem; font-weight: 600; }
 
 h1 { font-size: 4.0rem; line-height: 1.2; letter-spacing: -.1rem; }
 
