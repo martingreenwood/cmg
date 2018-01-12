@@ -65,9 +65,9 @@
 				</div>
 				<div class="four columns copy">
 					<ul>
-						<li>legal</li>
-						<li>terms</li>
-						<li>cookies	</li>
+						<li><a href="<?php echo home_url( '/legal' ); ?>">legal</a></li>
+						<li><a href="<?php echo home_url( '/terms' ); ?>">terms</a></li>
+						<li><a href="<?php echo home_url( '/cookies' ); ?>">cookies</a></li>
 					</ul>
 				</div>
 

@@ -450,6 +450,8 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 
 @media (min-width: 1160px) { #intro:after { height: 250px; bottom: -250px; } }
 
+#basic { padding: 200px 0; }
+
 #reach { padding: 200px 0; }
 
 #reach .blurb h2, #reach .blurb h3, #reach .blurb h4 { display: block; font-size: 22px; font-family: "Uniform"; color: #5f007b; }
@@ -494,17 +496,17 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 
 #social .stats .stat { width: 50%; float: left; margin-bottom: 20px; }
 
-@media (min-width: 750px) { #social .stats .stat { width: 25%; margin-bottom: 0; } }
+@media (min-width: 750px) { #social .stats .stat { width: 25%; margin-bottom: 0; padding-right: 20px; box-sizing: border-box; } }
 
-#social .stats .stat img { width: 90%; display: block; margin-bottom: 30px; }
+#social .stats .stat img { width: 90%; display: block; margin: 0 auto 30px; }
 
 #social .stats .stat h4 { margin-bottom: 0; color: white; font-size: 40px; line-height: 1; font-family: "Uniform-Medium"; }
 
-@media (min-width: 750px) { #social .stats .stat h4 { font-size: 70px; } }
+@media (min-width: 750px) { #social .stats .stat h4 { font-size: 60px; } }
 
 #social .caveat { margin-top: 40px; display: inline-block; }
 
-#social .caveat h4 { color: #5f007b; font-size: 20px; font-family: "Uniform-Medium"; }
+#social .caveat h4 { color: #5f007b; font-size: 34px; font-family: "Uniform-Medium"; }
 
 .about #social, .licensing #social { background-color: #27b6b3; height: auto; padding: 200px 0; min-height: auto; }
 
