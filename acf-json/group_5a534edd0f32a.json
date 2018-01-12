@@ -22,7 +22,7 @@
             "new_lines": "br"
         },
         {
-            "key": "field_5a534f898d9a4",
+            "key": "field_5a58cd123809c",
             "label": "Icons",
             "name": "icons",
             "type": "repeater",
@@ -35,13 +35,13 @@
                 "id": ""
             },
             "collapsed": "",
-            "min": 3,
-            "max": 3,
+            "min": 0,
+            "max": 0,
             "layout": "table",
-            "button_label": "Add icon",
+            "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_5a534fb78d9a5",
+                    "key": "field_5a58cd303809d",
                     "label": "Icon",
                     "name": "icon",
                     "type": "image",
@@ -49,7 +49,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "50",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
@@ -65,7 +65,7 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_5a534fbd8d9a6",
+                    "key": "field_5a58cd4d3809e",
                     "label": "Blurb",
                     "name": "blurb",
                     "type": "textarea",
@@ -73,7 +73,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "50",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
@@ -84,6 +84,30 @@
                     "new_lines": "br"
                 }
             ]
+        },
+        {
+            "key": "field_5a58ccd3ca164",
+            "label": "infographic",
+            "name": "infographic",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -110,5 +134,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "\/\/ about page \/\/ licensing page",
-    "modified": 1515491117
+    "modified": 1515769191
 }

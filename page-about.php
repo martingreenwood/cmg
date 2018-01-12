@@ -72,6 +72,9 @@ get_header(); ?>
 					endwhile;
 					endif;
 					?>
+					<?php if (get_field( 'infographic' )): ?>
+					<img src="<?php the_field( 'infographic' ); ?>" alt="">
+					<?php endif ?>
 					</div>
 				</div>
 
