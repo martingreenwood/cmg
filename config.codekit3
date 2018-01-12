@@ -1174,6 +1174,13 @@
 		"oAP": "\/page-about.php",
 		"oF": 0
 		},
+	"\/page-basic.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-basic.php",
+		"oF": 0
+		},
 	"\/page-licensing.php": {
 		"cB": 0,
 		"ft": 8192,
