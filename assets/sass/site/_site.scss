@@ -745,6 +745,18 @@ section {
 	}
 }
 
+.contact {
+
+	input[type='email'], input[type='number'], input[type='search'], input[type='text'], input[type='tel'], input[type='url'], input[type='password'], textarea, select {
+    	width: 100%;
+	}
+
+	textarea {
+    	height: 170px;
+	}
+	
+}
+
 footer {
 	padding: 25px 0;
 	background-color: #27b6b3;

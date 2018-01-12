@@ -661,6 +661,10 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 
 #subfooter .offices .office h4 { color: #27b6b3; font-size: 22px; text-transform: uppercase; margin-bottom: 0; }
 
+.contact input[type='email'], .contact input[type='number'], .contact input[type='search'], .contact input[type='text'], .contact input[type='tel'], .contact input[type='url'], .contact input[type='password'], .contact textarea, .contact select { width: 100%; }
+
+.contact textarea { height: 170px; }
+
 footer { padding: 25px 0; background-color: #27b6b3; text-align: center; }
 
 @media (min-width: 750px) { footer { text-align: left; } }
