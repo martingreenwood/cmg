@@ -47,7 +47,7 @@
 	$('.phoneslider').slick({
 		dots: false,
 		arrows: true,
-		infinite: false,
+		infinite: true,
 		autoplay: false,
 	});
 
