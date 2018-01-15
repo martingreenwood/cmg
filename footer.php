@@ -61,7 +61,7 @@
 			<div class="row">
 
 				<div class="eight columns copy">
-					<p>&copy; Copyright 2017 Caters Media Group. All rights reserved</p>
+					<p>&copy; Copyright <?php echo date('Y') ?> Caters Media Group. All rights reserved.</p>
 				</div>
 				<div class="four columns copy">
 					<ul>

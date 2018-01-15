@@ -271,6 +271,7 @@ section {
 			img {
 				display: inline-block;
 				margin-bottom: 30px;
+				width: 100%;
 			}
 
 			h2, h3, h4 {
@@ -337,11 +338,13 @@ section {
 			width: 50%;
 			float: left;
 			margin-bottom: 20px;
+			padding: 15px;
+			box-sizing: border-box;
 
 			@media (#{$bp-larger-than-tablet}) {
 				width: 25%;
 				margin-bottom: 0;
-				padding-right: 20px;
+				padding: 0 20px 0 0;
 				box-sizing: border-box;
 			}
 
@@ -456,6 +459,15 @@ section {
 			@media (#{$bp-larger-than-tablet}) {
 				width: 25%;
 				margin-bottom: 0;
+			}
+
+
+			&:nth-child(3n) {
+				clear: left;
+
+				@media (#{$bp-larger-than-tablet}) {
+					clear: none;
+				}
 			}
 
 			img {

@@ -476,7 +476,7 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 
 @media (min-width: 800px) { #reach .icons .icon:last-of-type { width: 50%; } }
 
-#reach .icons .icon img { display: inline-block; margin-bottom: 30px; }
+#reach .icons .icon img { display: inline-block; margin-bottom: 30px; width: 100%; }
 
 #reach .icons .icon h2, #reach .icons .icon h3, #reach .icons .icon h4 { display: block; font-size: 22px; font-family: "Uniform"; color: #5f007b; }
 
@@ -504,9 +504,9 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 
 #social .stats { margin-bottom: 30px; }
 
-#social .stats .stat { width: 50%; float: left; margin-bottom: 20px; }
+#social .stats .stat { width: 50%; float: left; margin-bottom: 20px; padding: 15px; box-sizing: border-box; }
 
-@media (min-width: 800px) { #social .stats .stat { width: 25%; margin-bottom: 0; padding-right: 20px; box-sizing: border-box; } }
+@media (min-width: 800px) { #social .stats .stat { width: 25%; margin-bottom: 0; padding: 0 20px 0 0; box-sizing: border-box; } }
 
 #social .stats .stat img { width: 90%; display: block; margin: 0 auto 30px; }
 
@@ -543,6 +543,10 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 #brands .library .item { float: left; width: 50%; box-sizing: border-box; padding: 15px; margin-bottom: 20px; }
 
 @media (min-width: 800px) { #brands .library .item { width: 25%; margin-bottom: 0; } }
+
+#brands .library .item:nth-child(3n) { clear: left; }
+
+@media (min-width: 800px) { #brands .library .item:nth-child(3n) { clear: none; } }
 
 #brands .library .item img { width: 100%; display: block; }
 
