@@ -23,10 +23,10 @@
         },
         {
             "key": "field_5a5381772045b",
-            "label": "Section Three Stats",
+            "label": "Section Three Videos",
             "name": "section_three_stats",
             "type": "repeater",
-            "instructions": "",
+            "instructions": "Add Embed code - iframe from youtube",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -35,35 +35,11 @@
                 "id": ""
             },
             "collapsed": "",
-            "min": 3,
-            "max": 3,
+            "min": 0,
+            "max": 0,
             "layout": "table",
-            "button_label": "Add Stat",
+            "button_label": "Add Video",
             "sub_fields": [
-                {
-                    "key": "field_5a5381892045c",
-                    "label": "Image",
-                    "name": "image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "thumbnail",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
                 {
                     "key": "field_5a5382512045d",
                     "label": "Text",
@@ -103,5 +79,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "\/\/ about page",
-    "modified": 1515421734
+    "modified": 1516033779
 }
