@@ -440,6 +440,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/img\/phone.png": {
+		"ft": 32768,
+		"iS": 4174,
+		"oA": 0,
+		"oAP": "\/assets\/img\/phone.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/right-chevron.svg": {
 		"ft": 2097152,
 		"miP": 0,

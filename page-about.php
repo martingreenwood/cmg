@@ -199,19 +199,22 @@ get_header(); ?>
 					</div>
 
 					<div class="stats">
+						<div class="phoneslider">
 						<?php
 						if( have_rows('section_three_stats') ):
 						while ( have_rows('section_three_stats') ) : the_row();
 							?>
 							<?php $image = get_sub_field( 'image' ); ?>
-							<div class="stat">
-								<img src="<?php echo $image['url'] ?>" alt="">
-								<!-- <p><?php the_sub_field('text'); ?></p> -->
+							<div class="item">
+								<div class="embed-container">
+									<?php the_sub_field('text'); ?>
+								</div>
 							</div>
 							<?php
 						endwhile;
 						endif;
 						?>
+						</div>
 					</div>
 				</div>
 

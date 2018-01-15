@@ -44,6 +44,13 @@
 		autoplaySpeed: 3500
 	});
 
+	$('.phoneslider').slick({
+		dots: false,
+		arrows: true,
+		infinite: false,
+		autoplay: false,
+	});
+
 	var item_length = $('.slides > div').length - 1;
 	var slider = $('.slides').slick({
 		autoplay: true,
