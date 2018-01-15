@@ -460,6 +460,10 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 
 #reach { padding: 200px 0; }
 
+@media (max-width: 800px) { #reach img { width: 70%; } }
+
+@media (max-width: 800px) { #reach .blurb { margin-top: 30px; } }
+
 #reach .blurb h2, #reach .blurb h3, #reach .blurb h4 { display: block; font-size: 22px; font-family: "Uniform"; color: #5f007b; }
 
 #reach .icons { margin-top: 60px; }
@@ -519,6 +523,10 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 .about #social, .licensing #social { background-color: #27b6b3; height: auto; padding: 200px 0; min-height: auto; }
 
 .licensing #social h2, .licensing #social h3, .licensing #social h4, .licensing #social p { color: white; border-color: white; }
+
+@media (max-width: 800px) { .licensing #social img { width: 70%; } }
+
+@media (max-width: 800px) { .licensing #social .blurb { margin-top: 30px; } }
 
 .licensing #social .blurb a { text-decoration: none; }
 

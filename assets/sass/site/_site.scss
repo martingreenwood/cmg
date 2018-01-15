@@ -228,7 +228,19 @@ section {
 	// 	}
 	// }
 
+	@media (#{$bp-smaller-than-tablet}) {
+		img {
+			// margin: 0 auto;
+			width: 70%;
+		}
+	}
+
 	.blurb {
+
+		@media (#{$bp-smaller-than-tablet}) {
+			margin-top: 30px;
+		}
+
 		h2, h3, h4 {
 			display: block;
 			font-size: 22px;
@@ -385,7 +397,18 @@ section {
 		border-color: white;
 	}
 
+	@media (#{$bp-smaller-than-tablet}) {
+		img {
+			// margin: 0 auto;
+			width: 70%;
+		}
+	}
+
 	.blurb {
+
+		@media (#{$bp-smaller-than-tablet}) {
+			margin-top: 30px; 
+		}
 
 		a {
 			text-decoration: none;
