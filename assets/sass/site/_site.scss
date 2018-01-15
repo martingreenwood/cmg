@@ -18,7 +18,7 @@ header {
 	.branding {
 	
 		img, svg {
-			width: 100px;
+			width: 75px;
 			height: auto;
 			clear: both;
 			display: block;
@@ -28,6 +28,10 @@ header {
 			-ms-transition: all .25s linear;
 			-o-transition: all .25s linear;
 			transition: all .25s linear;
+
+			@media (#{$bp-larger-than-tablet}) {
+				width: 100px;
+			}
 
 			&:last-of-type {
 				margin-bottom: 0;
@@ -44,7 +48,7 @@ header {
 =            elemenbts            =
 =================================*/
 body {
-	overflow-x: hidden;
+	over§w-x: hidden;
 }
 
 .page {
@@ -740,6 +744,10 @@ section {
 				font-size: 22px;
 				text-transform: uppercase;
 				margin-bottom: 0;
+			}
+
+			a {
+				color: white;
 			}
 		}
 	}
