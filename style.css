@@ -520,7 +520,7 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 
 @media (max-width: 800px) { .home #social { background-position: 0 50% !important; } }
 
-.about #social, .licensing #social { background-color: #27b6b3; height: auto; padding: 200px 0; min-height: auto; }
+.how-it-works #social, .about #social, .licensing #social { background-color: #27b6b3; height: auto; padding: 200px 0; min-height: auto; }
 
 .licensing #social h2, .licensing #social h3, .licensing #social h4, .licensing #social p { color: white; border-color: white; }
 
