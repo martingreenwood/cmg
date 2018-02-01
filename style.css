@@ -570,9 +570,11 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 
 #track h1, #track h2, #track h3, #track h4 { color: white; }
 
+#track .social { text-align: center; }
+
 #track .social .fab, #track .social svg { font-size: 40px; width: 80px; border-radius: 50%; text-align: center; color: #5f007b; background-color: #27b6b3; padding: 20px 0; margin-right: 5px; margin-bottom: 5px; }
 
-@media (min-width: 800px) { #track .social .fab, #track .social svg { font-size: 70px; width: 110px; margin-right: 5px; margin-bottom: 0; } }
+@media (min-width: 800px) { #track .social .fab, #track .social svg { font-size: 70px; width: 110px; margin: 0 13px; } }
 
 #track .slick-prev, #track .slick-next { position: absolute; top: 50%; width: 30px; height: 50px; display: block; background-size: contain; background-repeat: no-repeat; text-indent: -9999px; }
 

@@ -519,6 +519,7 @@ section {
 	}
 
 	.social {
+		text-align: center;
 		
 		.fab, svg {
 			font-size: 40px;
@@ -534,8 +535,7 @@ section {
 			@media (#{$bp-larger-than-tablet}) {
 				font-size: 70px;
 				width: 110px;
-				margin-right: 5px;
-				margin-bottom: 0;
+				margin: 0 13px;
 			}
 		}
 	}
