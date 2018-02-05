@@ -458,27 +458,27 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 
 #basic { padding: 200px 0; }
 
-#reach { padding: 200px 0; }
+#reach, #primary { padding: 200px 0; }
 
-@media (max-width: 800px) { #reach img { width: 70%; } }
+@media (max-width: 800px) { #reach img, #primary img { width: 70%; } }
 
-@media (max-width: 800px) { #reach .blurb { margin-top: 30px; } }
+@media (max-width: 800px) { #reach .blurb, #primary .blurb { margin-top: 30px; } }
 
-#reach .blurb h2, #reach .blurb h3, #reach .blurb h4 { display: block; font-size: 22px; font-family: "Uniform"; color: #5f007b; }
+#reach .blurb h2, #reach .blurb h3, #reach .blurb h4, #primary .blurb h2, #primary .blurb h3, #primary .blurb h4 { display: block; font-size: 22px; font-family: "Uniform"; color: #5f007b; }
 
-#reach .icons { margin-top: 60px; }
+#reach .icons, #primary .icons { margin-top: 60px; }
 
-#reach .icons .icon { float: left; width: 100%; }
+#reach .icons .icon, #primary .icons .icon { float: left; width: 100%; }
 
-@media (min-width: 800px) { #reach .icons .icon { width: 25%; } }
+@media (min-width: 800px) { #reach .icons .icon, #primary .icons .icon { width: 25%; } }
 
-#reach .icons .icon:last-of-type { width: 100%; }
+#reach .icons .icon:last-of-type, #primary .icons .icon:last-of-type { width: 100%; }
 
-@media (min-width: 800px) { #reach .icons .icon:last-of-type { width: 50%; } }
+@media (min-width: 800px) { #reach .icons .icon:last-of-type, #primary .icons .icon:last-of-type { width: 50%; } }
 
-#reach .icons .icon img { display: inline-block; margin-bottom: 30px; width: 100%; }
+#reach .icons .icon img, #primary .icons .icon img { display: inline-block; margin-bottom: 30px; width: 100%; }
 
-#reach .icons .icon h2, #reach .icons .icon h3, #reach .icons .icon h4 { display: block; font-size: 22px; font-family: "Uniform"; color: #5f007b; }
+#reach .icons .icon h2, #reach .icons .icon h3, #reach .icons .icon h4, #primary .icons .icon h2, #primary .icons .icon h3, #primary .icons .icon h4 { display: block; font-size: 22px; font-family: "Uniform"; color: #5f007b; }
 
 #social { height: 100vh; min-height: 900px; background-color: transparent; }
 
