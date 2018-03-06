@@ -155,11 +155,11 @@
 #primary-menu {
 	background-color: rgba(255,255,255,0.9);
 	position: fixed;
-	width: 100vw;
+	width: 100%;
 	display: table;
-	height: 100vh;
+	height: 100%;
 	right: 0;
-	left: 100vw;
+	left: 100%;
 	top: 0;
 	opacity: 0;
 
@@ -170,7 +170,7 @@
 	transition: all .25s linear;
 
 	@media (#{$bp-larger-than-desktop}) {
-		width: 100vw;
+		width: 100%;
 	}
 
 	&.active {

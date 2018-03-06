@@ -362,9 +362,9 @@ h1, h2, h3, h4, h5 { font-family: "Uniform-Black"; }
   50% { transform: translateY(-9px) rotate(0deg); }
   100% { transform: translateY(-9px) rotate(135deg); } }
 
-#primary-menu { background-color: rgba(255, 255, 255, 0.9); position: fixed; width: 100vw; display: table; height: 100vh; right: 0; left: 100vw; top: 0; opacity: 0; -webkit-transition: all .25s linear; -moz-transition: all .25s linear; -ms-transition: all .25s linear; -o-transition: all .25s linear; transition: all .25s linear; }
+#primary-menu { background-color: rgba(255, 255, 255, 0.9); position: fixed; width: 100%; display: table; height: 100%; right: 0; left: 100%; top: 0; opacity: 0; -webkit-transition: all .25s linear; -moz-transition: all .25s linear; -ms-transition: all .25s linear; -o-transition: all .25s linear; transition: all .25s linear; }
 
-@media (min-width: 1160px) { #primary-menu { width: 100vw; } }
+@media (min-width: 1160px) { #primary-menu { width: 100%; } }
 
 #primary-menu.active { opacity: 1; left: 0; }
 
