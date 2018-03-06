@@ -388,7 +388,7 @@ h1, h2, h3, h4, h5 { font-family: "Uniform-Black"; }
 /*==============================
 =            header            =
 ==============================*/
-header { padding: 40px 0; position: fixed; top: 0; left: 0; width: 100vw; z-index: 99; -webkit-transition: all .25s linear; -moz-transition: all .25s linear; -ms-transition: all .25s linear; -o-transition: all .25s linear; transition: all .25s linear; }
+header { padding: 40px 0; position: fixed; top: 0; left: 0; width: 100%; z-index: 99; -webkit-transition: all .25s linear; -moz-transition: all .25s linear; -ms-transition: all .25s linear; -o-transition: all .25s linear; transition: all .25s linear; }
 
 header .branding img, header .branding svg { width: 75px; height: auto; clear: both; display: block; margin-bottom: 10px; -webkit-transition: all .25s linear; -moz-transition: all .25s linear; -ms-transition: all .25s linear; -o-transition: all .25s linear; transition: all .25s linear; }
 
@@ -422,7 +422,7 @@ img { display: block; max-width: 100%; height: auto; }
 /*================================
 =            sections            =
 ================================*/
-section { position: relative; min-height: 100px; max-width: 100vw; background-color: white; overflow: hidden; }
+section { position: relative; min-height: 100px; max-width: 100%; background-color: white; overflow: hidden; }
 
 section .row { margin-bottom: 30px; }
 
