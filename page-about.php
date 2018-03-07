@@ -205,7 +205,7 @@ get_header(); ?>
 						while ( have_rows('section_three_stats') ) : the_row();
 							?>
 							<?php $image = get_sub_field( 'image' ); ?>
-							<div class="item">
+							<div class="item youtube">
 								<div class="embed-container">
 									<?php the_sub_field('text'); ?>
 								</div>

@@ -44,13 +44,6 @@
 		autoplaySpeed: 3500
 	});
 
-	$('.phoneslider').slick({
-		dots: false,
-		arrows: true,
-		infinite: true,
-		autoplay: false,
-	});
-
 	var item_length = $('.slides > div').length - 1;
 	var slider = $('.slides').slick({
 		autoplay: true,
@@ -63,16 +56,16 @@
 		cssEase: 'linear'
 	});
 
-	// On before slide change
-	slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
-		//check the length of total items in .slide container
-		//if that number is the same with the number of the last slider
-		//Then pause the slider
-		if( item_length === slider.slick('slickCurrentSlide') ){
-			//this should do the same thing -> slider.slickPause();
-			slider.slickSetOption("autoplay",false,false)
-		};
-	});
+	// // On before slide change
+	// slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+	// 	//check the length of total items in .slide container
+	// 	//if that number is the same with the number of the last slider
+	// 	//Then pause the slider
+	// 	if( item_length === slider.slick('slickCurrentSlide') ){
+	// 		//this should do the same thing -> slider.slickPause();
+	// 		slider.slickSetOption("autoplay",false,false)
+	// 	};
+	// });
 
 	// $(".owl-carousel").owlCarousel({
 	// 	loop:true,
@@ -137,5 +130,60 @@
 		$(this).toggleClass('active');
 		$('#primary-menu').toggleClass('active');
 	});
+
+})(jQuery);
+
+
+(function($) {
+    
+    /*
+     * The below example uses Slick Carousel, however this can be
+     * extended into any type of carousel, provided it lets you
+     * bind events when the slide changes. This will only work
+     * if all framed videos have the JS API parameters enabled.
+     */
+    
+    //bind our event here, it gets the current slide and pauses the video before each slide changes.
+    $(".phoneslider").on("beforeChange", function(event, slick) {
+      var currentSlide, slideType, player, command;
+      
+      //find the current slide element and decide which player API we need to use.
+      currentSlide = $(slick.$slider).find(".slick-current");
+      
+      //determine which type of slide this, via a class on the slide container. This reads the second class, you could change this to get a data attribute or something similar if you don't want to use classes.
+      slideType = currentSlide.attr("class").split(" ")[1];
+      
+      //get the iframe inside this slide.
+      player = currentSlide.find("iframe").get(0);
+      
+      if (slideType == "vimeo") {
+        command = {
+          "method": "pause",
+          "value": "true"
+        };
+      } else {
+        command = {
+          "event": "command",
+          "func": "pauseVideo"
+        };
+      }
+      
+      //check if the player exists.
+      if (player != undefined) {
+        //post our command to the iframe.
+        player.contentWindow.postMessage(JSON.stringify(command), "*");
+      }
+    });
+    
+    //start the slider
+	$('.phoneslider').slick({
+		dots: false,
+		arrows: true,
+		infinite: true,
+		autoplay: false,
+	});
+    
+    //run the fitVids jQuery plugin to ensure the iframes stay within the item.
+    // $('.item').fitVids();
 
 })(jQuery);
