@@ -65,6 +65,25 @@
                     "delay": 0
                 }
             ]
+        },
+        {
+            "key": "field_5aa90a2f72683",
+            "label": "Section Two Video",
+            "name": "section_two_video",
+            "type": "file",
+            "instructions": "Pick video file",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -84,5 +103,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "\/\/ homepage",
-    "modified": 1515491657
+    "modified": 1521028536
 }

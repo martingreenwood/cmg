@@ -71,8 +71,14 @@ get_header(); ?>
 
 	</section>
 
-	<?php $socialIamge = get_field( 'section_two_image' ); ?>
-	<section id="social" class="parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $socialIamge['url'] ?>">
+	<?php //$socialIamge = get_field( 'section_two_image' ); ?>
+	<!-- <section id="social" class="parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $socialIamge['url'] ?>"> -->
+	<section id="social">
+		<?php if (get_field( 'section_two_video' )): ?>
+		<video id="vid" video autobuffer autoplay>
+			<source id="mp4" src="<?php the_field( 'section_two_video' ); ?>" type="video/mp4">
+		</video>
+		<?php endif ?>
 
 		<div class="table">
 			<div class="cell middle">
@@ -81,9 +87,9 @@ get_header(); ?>
 					
 					<div class="row">
 
-						<div class="four columns blank">
+						<!-- <div class="four columns blank">
 							&nbsp;
-						</div>
+						</div> -->
 
 						<div class="eight columns copy">
 							<div class="messages">
