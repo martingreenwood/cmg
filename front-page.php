@@ -75,8 +75,11 @@ get_header(); ?>
 	<!-- <section id="social" class="parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $socialIamge['url'] ?>"> -->
 	<section id="social">
 		<?php if (get_field( 'section_two_video' )): ?>
-		<video id="vid" autobuffer autoplay loop muted playsinline poster="<?php echo $socialIamge['url'] ?>">
-			<source id="mp4" src="<?php the_field( 'section_two_video' ); ?>" type="video/mp4">
+		<video autobuffer autoloop playsinline loop controls poster="<?php echo $socialIamge['url'] ?>" id="vid">
+			<source src="<?php the_field( 'section_two_video' ); ?>">
+			<param name="autoplay" value="true">
+			<param name="autoStart" value="1">
+			</object>
 		</video>
 		<?php endif ?>
 
