@@ -162,6 +162,9 @@ section {
 	height: 100vh;
 	background-color: transparent;
 
+	max-width: 1920px;
+	margin: 0 auto;
+
 	@media (#{$bp-larger-than-phablet}) {
 		min-height: 900px;
 	}
@@ -291,6 +294,9 @@ section {
 	height: 100vh;
 	min-height: 900px;
 	background-color: transparent;
+
+	max-width: 1920px;
+	margin: 0 auto;
 
 	video {
 		position: absolute;
@@ -521,6 +527,9 @@ section {
 	height: auto;
 	padding: 150px 0;
 	min-height: auto;
+
+	max-width: 1920px;
+	margin: 0 auto;
 
 	&:after {
 		@include bottomslope();
@@ -809,6 +818,9 @@ section {
 	background-color: transparent;
 	padding: 100px 0;
 
+	max-width: 1920px;
+	margin: 0 auto;
+
 	&:after {
 		@include bottomslope();
 	}
@@ -891,6 +903,9 @@ section {
 	background-color: #591985;
 	color: white;
 
+	max-width: 1920px;
+	margin: 0 auto;
+
 	.branding {
 
 		img, svg {
@@ -945,6 +960,9 @@ footer {
 	padding: 25px 0;
 	background-color: #27b6b3;
 	text-align: center;
+
+	max-width: 1920px;
+	margin: 0 auto;
 
 	@media (#{$bp-larger-than-tablet}) {
 		text-align: left;

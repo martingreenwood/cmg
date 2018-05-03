@@ -7,7 +7,7 @@
 		"uuidString": "FB456232-B634-45C8-94B4-A98E5007AC97"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/.jscsrc": {
 		"cB": 0,
@@ -350,6 +350,7 @@
 	"\/assets\/img\/elephant.jpg": {
 		"ft": 16384,
 		"iS": 3752067,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/img\/elephant.jpg",
 		"oF": 0,
@@ -381,6 +382,7 @@
 	"\/assets\/img\/giraffe.jpg": {
 		"ft": 16384,
 		"iS": 1344385,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/img\/giraffe.jpg",
 		"oF": 0,
@@ -464,6 +466,7 @@
 	"\/assets\/img\/surf.jpg": {
 		"ft": 16384,
 		"iS": 4037412,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/img\/surf.jpg",
 		"oF": 0,
@@ -1344,7 +1347,8 @@
 	"creationDate": 533126119,
 	"displayValue": "cmg",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-kanye"
+	"iconImageName": "meme-kanye",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3147,6 +3151,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
