@@ -889,7 +889,7 @@ section {
 			width: 16.666%;
 			height: auto;
 			float: left;
-			filter: grayscale(1);
+			//filter: grayscale(1);
 
 			@media (#{$bp-smaller-than-tablet}) {
 				width: 50%;

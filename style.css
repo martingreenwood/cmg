@@ -693,7 +693,7 @@ section h3 { color: #5f007b; font-size: 66px; border-bottom: 2px solid #27b6b3; 
 
 #news .brands { margin-top: 60px; }
 
-#news .brands img { width: 16.666%; height: auto; float: left; filter: grayscale(1); }
+#news .brands img { width: 16.666%; height: auto; float: left; }
 
 @media (max-width: 800px) { #news .brands img { width: 50%; } }
 
