@@ -7,44 +7,7 @@
 
 get_header(); ?>
 
-	<?php $introImg = get_field( 'intro_image' ); ?>
-	<section id="intro" class="parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $introImg['url']; ?>">
-
-		<div class="table">
-			<div class="cell middle">
-
-				<div class="container">
-					
-					<div class="row">
-
-						<div class="ten columns hero" style="padding-top: 100px;">
-
-							<div class="slides">
-
-								<?php
-								if( have_rows('messages') ):
-								while ( have_rows('messages') ) : the_row();
-									?>
-									<div class="slide">
-										<?php the_sub_field('message'); ?>
-									</div>
-									<?php
-								endwhile;
-								endif;
-								?>
-								
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-
-	</section>
+	<?php get_template_part( 'partials/main', 'banner' ); ?>
 
 	<section id="reach">
 
@@ -73,7 +36,7 @@ get_header(); ?>
 					endif;
 					?>
 					<?php if (get_field( 'infographic' )): ?>
-					<img src="<?php the_field( 'infographic' ); ?>" alt="">
+						<img src="<?php the_field( 'infographic' ); ?>" alt="">
 					<?php endif ?>
 					</div>
 				</div>
@@ -112,7 +75,7 @@ get_header(); ?>
 								<div class="stat">
 									<img src="<?php echo $icon['url'] ?>" alt="">
 									<h4><?php the_sub_field('stst'); ?></h4>
-									<p><?php the_sub_field('blurb'); ?></p>
+									<?php the_sub_field('blurb'); ?>
 								</div>
 								<?php
 							endwhile;
@@ -239,10 +202,30 @@ get_header(); ?>
 				</div>
 
 				<div class="ten columns copy">
-					<h3><?php the_field( 'section_four_title' ); ?></h3>
-					<?php the_field( 'section_four_intro' ); ?>
-					<?php $four_image = get_field( 'section_four_image' ); ?>
-					<img src="<?php echo $four_image['url']; ?>" alt="">
+					<h3><?php the_field( 'process_title' ); ?></h3>
+					<?php the_field( 'process_intro' ); ?>
+					<div class="items">
+					<?php
+					if( have_rows('planning_row') ):
+					while ( have_rows('planning_row') ) : the_row();
+					?>
+					<div class="item">
+						<div class="img">
+							<?php $icon = get_sub_field('icon'); ?>
+							<img src="<?php echo $icon['url'] ?>" alt="">
+						</div><!--
+						--><div class="title">
+							<h3><?php the_sub_field('title'); ?></h3>
+						</div><!--
+						--><div class="text">
+							<?php the_sub_field('content'); ?>
+						</div>
+					</div>
+					<?php
+					endwhile;
+					endif;
+					?>
+					</div>
 				</div>
 
 				<div class="one columns blank">
@@ -318,7 +301,7 @@ get_header(); ?>
 	</section>
 
 	<!-- For Template only [[hidden]] -->
-
+	<?php /*
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -335,6 +318,8 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	*/ 
+	?>
 
 	
 

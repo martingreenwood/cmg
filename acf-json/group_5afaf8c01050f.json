@@ -1,11 +1,11 @@
 {
-    "key": "group_5a5358bc7beeb",
-    "title": "Section One",
+    "key": "group_5afaf8c01050f",
+    "title": "Process",
     "fields": [
         {
-            "key": "field_5a5358d5ad136",
-            "label": "Section One Heading",
-            "name": "section_one_heading",
+            "key": "field_5afafa23556ba",
+            "label": "Process Title",
+            "name": "process_title",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -19,12 +19,31 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": "br"
+            "new_lines": ""
         },
         {
-            "key": "field_5a5359590e8c3",
-            "label": "Section One Stats",
-            "name": "section_one_stats",
+            "key": "field_5afafa3c556bb",
+            "label": "Process Intro",
+            "name": "process_intro",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5afaf8d08ba07",
+            "label": "Row",
+            "name": "planning_row",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -35,13 +54,13 @@
                 "id": ""
             },
             "collapsed": "",
-            "min": 4,
-            "max": 4,
+            "min": 0,
+            "max": 0,
             "layout": "block",
-            "button_label": "Add Stat",
+            "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_5a53596b0e8c4",
+                    "key": "field_5afaf8dc8ba08",
                     "label": "Icon",
                     "name": "icon",
                     "type": "image",
@@ -65,9 +84,9 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_5a5359810e8c5",
-                    "label": "Stat",
-                    "name": "stst",
+                    "key": "field_5afaf8e58ba09",
+                    "label": "Title",
+                    "name": "title",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -84,9 +103,9 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5a5359bd0e8c6",
-                    "label": "Blurb",
-                    "name": "blurb",
+                    "key": "field_5afaf8eb8ba0a",
+                    "label": "Content",
+                    "name": "content",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -99,37 +118,18 @@
                     "default_value": "",
                     "tabs": "all",
                     "toolbar": "full",
-                    "media_upload": 0,
+                    "media_upload": 1,
                     "delay": 0
                 }
             ]
-        },
-        {
-            "key": "field_5a53593e0e8c2",
-            "label": "Section One Text",
-            "name": "section_one_text",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
         }
     ],
     "location": [
         [
             {
-                "param": "post_template",
+                "param": "page",
                 "operator": "==",
-                "value": "page-about.php"
+                "value": "82"
             }
         ]
     ],
@@ -140,6 +140,6 @@
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
-    "description": "\/\/ about page (stats)",
-    "modified": 1526310339
+    "description": "",
+    "modified": 1526397915
 }

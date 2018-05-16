@@ -22,30 +22,24 @@
 					<p><?php the_field( 'footer_text', 'options' ); ?></p>
 				</div>
 
-				<div class="four columns offices">
+				<div class="eight columns offices"><!--
 				<?php
 				$cnt = 1;
 				if( have_rows('offices', 'options') ):
 				while ( have_rows('offices', 'options') ) : the_row();
 				?>
 
-					<div class="office">
+					--><div class="office">
 						<h4><?php the_sub_field( 'name' ); ?></h4>
-						<span>Phone: <?php the_sub_field( 'phone' ); ?></span>
-						<span><?php echo antispambot( get_sub_field( 'email' ), false ); ?></span>
-					</div>
-
-				<?php if ($cnt % 3 == 0): ?>
-				</div>
-				<div class="four columns offices">
-				<?php endif; ?>	
-
+						<span><a href="tel:<?php the_sub_field( 'phone' ); ?>"><?php the_sub_field( 'phone' ); ?></a></span>
+						<span><a href="mailto:<?php echo antispambot( get_sub_field( 'email' ), false ); ?>"><?php echo antispambot( get_sub_field( 'email' ), false ); ?></a></span>
+					</div><!--
 				<?php
 				$cnt++;
 				endwhile;
 				endif;
 				?>
-				</div>
+				--></div>
 
 
 			</div>
@@ -65,7 +59,7 @@
 				</div>
 				<div class="four columns copy">
 					<ul>
-						<li><a href="<?php echo home_url( '/legal' ); ?>">legal</a></li>
+						<!-- <li><a href="<?php echo home_url( '/legal' ); ?>">legal</a></li> -->
 						<li><a href="<?php echo home_url( '/terms' ); ?>">terms</a></li>
 						<li><a href="<?php echo home_url( '/cookies' ); ?>">cookies</a></li>
 					</ul>
@@ -80,6 +74,26 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#5f007b",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#27b6b3",
+      "text": "#ffffff"
+    }
+  },
+  "position": "bottom-right",
+  "content": {
+    "href": "http://www.catersmediagroup.com/cookies/"
+  }
+})});
+</script>
 </body>
 </html>

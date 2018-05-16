@@ -7,44 +7,7 @@
 
 get_header(); ?>
 
-	<?php $introImg = get_field( 'intro_image' ); ?>
-	<section id="intro" class="parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $introImg['url']; ?>">
-
-		<div class="table">
-			<div class="cell middle">
-
-				<div class="container">
-					
-					<div class="row">
-
-						<div class="ten columns hero" style="padding-top: 100px;">
-
-							<div class="slides">
-
-								<?php
-								if( have_rows('messages') ):
-								while ( have_rows('messages') ) : the_row();
-									?>
-									<div class="slide">
-										<?php the_sub_field('message'); ?>
-									</div>
-									<?php
-								endwhile;
-								endif;
-								?>
-								
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-
-	</section>
+	<?php get_template_part( 'partials/main', 'banner' ); ?>
 
 	<section id="reach">
 
@@ -74,6 +37,7 @@ get_header(); ?>
 	<?php //$socialIamge = get_field( 'section_two_image' ); ?>
 	<!-- <section id="social" class="parallax-window" data-parallax="scroll" data-bleed="50" data-image-src="<?php echo $socialIamge['url'] ?>"> -->
 	<section id="social">
+		<canvas id="grain"></canvas>
 		<?php if (get_field( 'section_two_video' )): ?>
 		<video id="vid" autobuffer autoplay loop muted playsinline poster="<?php echo $socialIamge['url'] ?>">
 			<source id="mp4" src="<?php the_field( 'section_two_video' ); ?>" type="video/mp4">
@@ -207,15 +171,21 @@ get_header(); ?>
 			<div class="row">
 
 				<div class="twelve columns brands">
+					<ul><!--
 					<?php 
 					$news_logos = get_field('news_logos');
 					$size = 'full'; // (thumbnail, medium, large, full or custom size)
 					if( $news_logos ):
 						foreach( $news_logos as $news_logo ):
-							echo wp_get_attachment_image( $news_logo['ID'], $size );
+							?>
+							--><li>
+								<?php echo wp_get_attachment_image( $news_logo['ID'], $size ); ?>
+							</li><!--
+							<?php
 						endforeach;
 					endif; 
 					?>
+				--></ul>
 				</div>
 
 			</div>
@@ -224,6 +194,7 @@ get_header(); ?>
 				
 	</section>
 
+	<?php /*
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -238,10 +209,9 @@ get_header(); ?>
 
 		endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-	
+		</main>
+	</div> 
+	*/ ?>
 
 <?php
 get_footer();

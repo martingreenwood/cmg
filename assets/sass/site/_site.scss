@@ -3,7 +3,7 @@
 ==============================*/
 
 header {
-	padding: 40px 0;
+	padding: 40px 0 0 0;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -115,12 +115,9 @@ img {
 
 section {
 	position: relative;
-	min-height: 100px;
-	// max-width: 100vw;
-	max-width: 100%;
+	//min-height: 300px;
 	background-color: white;
 	overflow: hidden;
-	// overflow-y: hidden;
 
 	.row {
 		margin-bottom: 30px;
@@ -159,18 +156,17 @@ section {
 }
 
 #intro {
-	height: 100vh;
 	background-color: transparent;
-
 	max-width: 1920px;
+	height: 1080px;
 	margin: 0 auto;
 
 	@media (#{$bp-larger-than-phablet}) {
-		min-height: 900px;
+		// min-height: 900px;
 	}
 
 	@media (#{$bp-smaller-than-tablet}) {
-    	background-position: 70% !important;
+    	// background-position: 70% !important;
 	}
 
 	.hero {
@@ -179,6 +175,7 @@ section {
 		// 	margin-right: 0;
 		// 	margin-left: 0;
 		// }
+		padding: 300px 0 200px 0;
 	}
 
 	h1, h2 {
@@ -190,7 +187,7 @@ section {
 	h1 {
 		color: white;
 		font-size: 90px;
-		margin-bottom: 40px;
+		margin-bottom: 0;
 
 		@media (#{$bp-smaller-than-tablet}) {
 			font-size: 50px;
@@ -233,10 +230,13 @@ section {
 	// 	}
 	// }
 
-	@media (#{$bp-smaller-than-tablet}) {
+	img {
+		width: 75%;
+	}
+
+	@media (#{$bp-larger-than-tablet}) {
 		img {
-			// margin: 0 auto;
-			width: 70%;
+			width: 100%;
 		}
 	}
 
@@ -262,26 +262,33 @@ section {
 			width: 100%;
 
 			@media (#{$bp-larger-than-tablet}) {
-				width: 25%;
+				width: 17%;
+				margin-right: 6%;
 			}
 
 			&:last-of-type {
 				width: 100%;
+				margin-right: 0;
 
 				@media (#{$bp-larger-than-tablet}) {
-					width: 50%;
+					width: 53%;
 				}
 			}
 
 			img {
 				display: inline-block;
 				margin-bottom: 30px;
-				width: 100%;
+				width: 75%;
+
+				@media (#{$bp-larger-than-tablet}) {
+					width: 100%;
+				}
 			}
 
 			h2, h3, h4 {
 				display: block;
 				font-size: 22px;
+				font-weight: 800;
 				font-family: "Uniform";
 				color: $primary-color;
 			}
@@ -291,12 +298,33 @@ section {
 }
 
 #social {
-	height: 100vh;
-	min-height: 900px;
+	height: 720px;
 	background-color: transparent;
-
 	max-width: 1920px;
 	margin: 0 auto;
+
+	#grain {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $secondary-color;
+		opacity: 1;
+		-webkit-transition: opacity 2s linear 2s;
+		   -moz-transition: opacity 2s linear 2s;
+		    -ms-transition: opacity 2s linear 2s;
+		     -o-transition: opacity 2s linear 2s;
+		        transition: opacity 2s linear 2s;
+
+		&.hide {
+			opacity: 0;
+		}
+	}
+
+	@media (#{$bp-larger-than-tablet}) {
+		height: 1080px;
+	}
 
 	video {
 		position: absolute;
@@ -351,19 +379,24 @@ section {
 
 	&:before {
 		@include topslope();
+		z-index: 1;
 	}
 
 	.stats {
 		margin-bottom: 30px;
 
 		.stat {
-			width: 50%;
+			width: 100%;
 			float: left;
 			margin-bottom: 20px;
 			padding: 15px;
 			box-sizing: border-box;
 
 			@media (#{$bp-larger-than-tablet}) {
+				width: 50%;
+			}
+
+			@media (#{$bp-larger-than-desktop}) {
 				width: 25%;
 				margin-bottom: 0;
 				padding: 0 20px 0 0;
@@ -371,9 +404,14 @@ section {
 			}
 
 			img {
-				width: 90%;
+				width: 75%;
 				display: block;
-				margin: 0 auto 30px;
+				margin: 0 0 30px 0;
+
+				@media (#{$bp-larger-than-tablet}) {
+					width: 90%;
+					margin: 0 auto 30px;
+				}
 			}
 
 			h4 {
@@ -383,7 +421,11 @@ section {
 				line-height: 1;
 				font-family: "Uniform-Medium";
 
-				@media (#{$bp-larger-than-tablet}) {
+				@media (#{$bp-larger-than-phablet}) {
+					font-size: 45px;
+				}
+
+				@media (#{$bp-larger-than-desktop}) {
 					font-size: 60px;
 				}
 			}
@@ -408,10 +450,14 @@ section {
 	}
 }
 
+.home #reach img {
+	width: 100%;
+}
+
 .how-it-works #social, .about #social, .licensing #social {
 	background-color: $secondary-color;
 	height: auto;
-	padding: 150px 0;
+	padding: 220px 0;
 	min-height: auto;
 }
 
@@ -424,8 +470,7 @@ section {
 
 	@media (#{$bp-smaller-than-tablet}) {
 		img {
-			// margin: 0 auto;
-			width: 70%;
+			width: 75%;
 		}
 	}
 
@@ -473,12 +518,16 @@ section {
 
 		.item {
 			float: left;
-			width: 50%;
+			width: 100%;
 			box-sizing: border-box;
 			padding: 15px;
 			margin-bottom: 20px;
 
 			@media (#{$bp-larger-than-tablet}) {
+				width: 50%;
+			}
+
+			@media (#{$bp-larger-than-desktop}) {
 				width: 25%;
 				margin-bottom: 0;
 			}
@@ -493,8 +542,12 @@ section {
 			}
 
 			img {
-				width: 100%;
+				width: 75%;
 				display: block;
+
+				@media (#{$bp-larger-than-tablet}) {
+					width: 100%;
+				}
 			}
 
 			h3, h4 {
@@ -548,16 +601,21 @@ section {
 		
 		.fab, svg {
 			font-size: 40px;
-			width: 80px;
+			width: 60px;
 			border-radius: 50%;
 			text-align: center;
 			color: $primary-color;
 			background-color: $secondary-color;
-			padding: 20px 0;
+			padding: 10px 0;
 			margin-right: 5px;
 			margin-bottom: 5px;
 
 			@media (#{$bp-larger-than-tablet}) {
+				width: 80px;
+				padding: 20px 0;
+			}
+
+			@media (#{$bp-larger-than-desktop}) {
 				font-size: 70px;
 				width: 110px;
 				margin: 0 13px;
@@ -750,6 +808,100 @@ section {
 	img {
 		margin-top: 30px;
 	}
+
+	.items {
+		margin-top: 6rem;
+
+		.item {
+			padding-bottom: 4rem;
+			position: relative;
+
+			&:last-of-type {
+				padding-bottom: 0;
+
+				.img {
+					&:after {
+						display: none;
+					}
+				}
+			}
+
+			div {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.img {
+				width: 20%;
+				position: relative;
+				
+				@media (#{$bp-larger-than-desktop}) {
+					width: 20%;
+				}
+
+				&:after {
+					content: '';
+					width: 3px;
+					height: 100%;
+					position: absolute;
+					background: #27b6b3;
+					left: 36%;
+					top: 100%;
+					z-index: 0;
+					display: none;
+
+					@media (#{$bp-larger-than-desktop}) {
+						display: block;
+					}
+				}
+
+				img {
+					margin: 0 0 2rem 0;
+					width: 75%;
+					display: block;
+
+					@media (#{$bp-larger-than-desktop}) {
+						width: 75%;
+						margin: 0;
+					}
+				}
+			}
+
+			.title {
+				width: 80%;
+				margin-bottom: 2rem;
+
+				@media (#{$bp-larger-than-desktop}) {
+					width: 20%;
+					margin-bottom: 0;
+				}
+
+				h1, h2, h3 {
+					font-size: 2rem;
+					text-decoration: none;
+					border: 0;
+					margin: 0;
+					padding: 0;
+				}
+			}
+
+			.text {
+				width: 100%;
+				box-sizing: border-box;
+
+				@media (#{$bp-larger-than-desktop}) {
+					width: 60%;
+					padding-left: 2rem;
+					padding-left: 2rem;
+				}
+
+				p {
+					font-size: 1.7rem;
+					color: #210e26;
+				}
+			}
+		}
+	}
 }
 
 .licensing #joining {
@@ -810,6 +962,10 @@ section {
 		width: 15%;
 		float: right;
 	}
+}
+
+.how-it-works #contact {
+	background-color: #f9f9f9;
 }
 
 #coverage {
@@ -885,15 +1041,33 @@ section {
 	.brands {
 		margin-top: 60px;
 
-		img {
-			width: 16.666%;
-			height: auto;
-			float: left;
-			//filter: grayscale(1);
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
 
-			@media (#{$bp-smaller-than-tablet}) {
-				width: 50%;
+			li {
+				width: 20%;
+				height: auto;
+				display: inline-block;
+				vertical-align: middle;
+				box-sizing: border-box;
+				text-align: center;
+				margin-bottom: 30px;
+
+				@media (#{$bp-smaller-than-tablet}) {
+					width: 50%;
+				}
+
 			}
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+			max-height: 130px;
+			max-width: 130px;
+			width: auto;
+			height: auto;
 		}
 	}
 }
@@ -925,6 +1099,14 @@ section {
 
 		.office {
 			margin-bottom: 40px;
+			width: 100%;
+			display: inline-block;
+			padding-right: 40px;
+			box-sizing: border-box;
+
+			@media (#{$bp-larger-than-laptop}) {
+				width: 50%;
+			}
 
 			&:last-of-type {
 				margin-bottom: 0;
@@ -939,6 +1121,7 @@ section {
 
 			a {
 				color: white;
+				text-decoration: none;
 			}
 		}
 	}
@@ -985,4 +1168,7 @@ footer {
 			margin-left: 15px;
 		}
 	}
+}
+
+.cc-compliance a.cc-btn.cc-dismiss {
 }

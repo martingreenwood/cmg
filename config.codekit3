@@ -150,6 +150,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/acf-json\/group_5afaf8c01050f.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_5afaf8c01050f-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -415,6 +423,17 @@
 		"iS": 41557,
 		"oA": 0,
 		"oAP": "\/assets\/img\/many.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/noise.png": {
+		"ft": 32768,
+		"iS": 151843,
+		"oA": 0,
+		"oAP": "\/assets\/img\/noise.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1207,6 +1226,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/page.php",
+		"oF": 0
+		},
+	"\/partials\/main-banner.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/partials\/main-banner.php",
 		"oF": 0
 		},
 	"\/README.md": {
