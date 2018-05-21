@@ -1089,11 +1089,11 @@
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
 		"oAP": "\/style.css",
 		"oF": 2,
-		"oS": 2,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/assets\/sass\/typography\/_typography.scss": {
@@ -1321,13 +1321,6 @@
 		"oAP": "\/style-min.css",
 		"oF": 0,
 		"oS": 3
-		},
-	"\/style.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/style.css.map",
-		"oF": 0
 		},
 	"\/template-parts\/content-home.php": {
 		"cB": 0,

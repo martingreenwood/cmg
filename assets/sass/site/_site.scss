@@ -169,7 +169,7 @@ section {
     	// background-position: 70% !important;
 	}
 
-	.hero {
+	.hero {	
 		// @media (#{$bp-smaller-than-desktop}) {
 		// 	width: 100%;
 		// 	margin-right: 0;
@@ -905,7 +905,7 @@ section {
 }
 
 .licensing #joining {
-	padding-bottom: 0;
+	// padding-bottom: 0;
 }
 
 #casestudy {
@@ -927,6 +927,7 @@ section {
 
 #contact {
 	padding: 150px 0;
+	background-color: #f9f9f9;
 
 	.text {
 		float: left;
@@ -1110,6 +1111,10 @@ section {
 
 			&:last-of-type {
 				margin-bottom: 0;
+			}
+
+			span {
+				display: block;
 			}
 
 			h4 {
