@@ -101,6 +101,7 @@ if (c != null) {
 		arrows: false,
 		infinite: true,
 		autoplay: true,
+		adaptiveHeight: true,
 		fade: true,
 		slide: 'div',
 		cssEase: 'linear',

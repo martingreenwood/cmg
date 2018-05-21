@@ -158,15 +158,18 @@ section {
 #intro {
 	background-color: transparent;
 	max-width: 1920px;
-	height: 1080px;
+	height: 100vh;
 	margin: 0 auto;
 
 	@media (#{$bp-larger-than-phablet}) {
-		// min-height: 900px;
+	}
+
+	@media (#{$bp-larger-than-tablet}) {
+    	height: 1080px;
 	}
 
 	@media (#{$bp-smaller-than-tablet}) {
-    	// background-position: 70% !important;
+		background-position: 66% center !important;
 	}
 
 	.hero {	
@@ -175,7 +178,9 @@ section {
 		// 	margin-right: 0;
 		// 	margin-left: 0;
 		// }
-		padding: 300px 0 200px 0;
+		@media (#{$bp-larger-than-tablet}) {
+			padding: 300px 0 200px 0;
+		}
 	}
 
 	h1, h2 {
