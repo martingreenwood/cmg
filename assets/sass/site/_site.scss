@@ -637,9 +637,18 @@ section {
 		background-size: contain;
 		background-repeat: no-repeat;
 		text-indent: -9999px;
-
+	}
+	.slick-prev {
 		@media (#{$bp-smaller-than-tablet}) {
-			display: none !important;
+			left: 0 !important;
+			top: 130%;
+		}
+	}
+
+	.slick-next {
+		@media (#{$bp-smaller-than-tablet}) {
+			right: 0 !important;
+			top: 130%;
 		}
 	}
 
